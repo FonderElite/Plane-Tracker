@@ -14,8 +14,8 @@ from bokeh.application.handlers.function import FunctionHandler
 import numpy as np
 lon_min,lat_min=-125.974,30.038
 lon_max,lat_max=-68.748,52.214
-user = "fonder"
-passwd = "vqQL3R9piywCjsh"
+user = ""
+passwd = ""
 url_data='https://' + user + passwd + '@opensky-network.org/api/states/all?lamin='+str(lat_min)+'&lomin='+str(lon_min)+'&lamax='+str(lat_max)+'&lomax='+str(lon_max)
 response = requests.get(url_data).json()
 #LOAD TO PANDAS DATAFRAME
